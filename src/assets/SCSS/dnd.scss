@@ -1,0 +1,63 @@
+.dnd {
+    .container {
+        padding: 50px 20px 0px 20px;
+        width: max-content;
+        min-height: 100vh;
+
+        .dnd-heading {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+
+        .boxes {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
+            .wrap-box {   
+                height: calc(96vh - 110px);
+
+                &:last-child {
+                    margin-right: 20px;
+                }
+                
+                .box {
+                    border-radius: 5px;
+                    border: 1px solid rgb(223, 223, 223);
+                    min-width: 450px;
+                    max-width: 450px;
+    
+                    .box-name {
+                        font-size: 1.8rem;
+                        padding: 20px;
+                        background-color: white;
+                        border-bottom: 1px solid rgb(223, 223, 223);
+                        cursor: grab;
+                    }
+    
+                    .items {
+                        padding: 20px;
+                        background-color: rgb(246, 246, 246);
+                        min-height: fit-content;
+                        max-height: calc(96vh - 200px);
+                        overflow-y: auto;
+    
+                        .item {
+                            padding: 20px;
+                            background-color: white;
+                            border-radius: 5px;
+                            border: 1px solid rgb(223, 223, 223);
+                            margin-bottom: 15px;
+                            cursor: grab;
+    
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
